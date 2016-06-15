@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Recordar2016</string>
+    <string name="action_settings">Settings</string>
+    <string name="titulo_imagen1">Titulo imagen</string>
+    <string name="beneficio1">Beneficio</string>
+    <string name="title_activity_alianzas_nacionales">AlianzasNacionales</string>
+
+</resources>

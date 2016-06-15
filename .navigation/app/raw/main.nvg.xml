@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<navigationModel
+  ns = "http://schemas.android.com?import=com.android.tools.idea.editors.navigation.model.*">
+  <locations  
+    class = "java.util.ArrayList">
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.clubrecordar.recordar2016.AlianzasNacionales"/>
+      <point      
+        x = "1424"      
+        y = "32"/>
+    </statePointEntry>
+    <statePointEntry>
+      <state      
+        class = "com.android.tools.idea.editors.navigation.model.ActivityState"      
+        className = "com.clubrecordar.recordar2016.MainActivity"/>
+      <point      
+        x = "116"      
+        y = "84"/>
+    </statePointEntry>
+  </locations>
+</navigationModel>
