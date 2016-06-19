@@ -17,6 +17,8 @@ public class AlianzasNacionales extends AppCompatActivity{
 
 
     /*
+    GRUPO2
+    Esta es la Activity dos, donde se inicializa todas las alianzas  a nivel nacional
     Declarar instancias globales
      */
 

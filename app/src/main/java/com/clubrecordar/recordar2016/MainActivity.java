@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity{
 
 
     /*
+    GRUPO 1
     Esta es la actividad principal donde inicia la aplicacion con las 4 card, la idea es que de cada una
     pueda enlazar y de la primera card iniciar otra activity. que es alianzasNacionales
     Declarar instancias globales

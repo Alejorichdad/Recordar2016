@@ -1,6 +1,8 @@
 package com.clubrecordar.recordar2016;
 
 /**
+ * GRUPO 2
+ * Esta es la fuente de datos de la Activity dos, AlianzasNacionales
  * Created by A on 31/05/2016.
  */
 public class DatosAlianzasNacionales {

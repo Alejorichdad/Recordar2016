@@ -11,6 +11,8 @@ import android.widget.Toast;
 import java.util.List;
 
 /**
+ * GRUPO2
+ * Este es el adaptador para la Activity dos,
  * Created by A on 17/05/2016.
  */
 public class AlianzasNacionalesAdaptador extends RecyclerView.Adapter<AlianzasNacionalesAdaptador.DatosAlianzasNacionalesViewHolder> {

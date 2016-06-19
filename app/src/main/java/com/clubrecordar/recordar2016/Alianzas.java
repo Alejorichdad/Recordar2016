@@ -6,7 +6,8 @@ package com.clubrecordar.recordar2016;
 public class Alianzas {
 
     /*
-    Este es el set de datos  o implementacion de la fuente de datos para recyclerView de main Activity
+    GRUPO1
+    Este es el set de datos  o implementacion de la fuente de datos para recyclerView de main Activity grupo1
      */
 
     private int idImagen;

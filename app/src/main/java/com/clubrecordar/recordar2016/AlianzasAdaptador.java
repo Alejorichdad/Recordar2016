@@ -10,7 +10,10 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
+ * GRUPO1
+ * Este es el adaptador de las Alianzas del primer grupo y la ManiActivity
  * Created by A on 17/05/2016.
+ *
  */
 public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.AlianzasViewHolder> {
    private List<Alianzas> items;
