@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity{
 
 
     /*
+    Esta es la actividad principal donde inicia la aplicacion con las 4 card, la idea es que de cada una
+    pueda enlazar y de la primera card iniciar otra activity. que es alianzasNacionales
     Declarar instancias globales
+
      */
 
     private RecyclerView recycler;
@@ -63,6 +66,3 @@ public class MainActivity extends AppCompatActivity{
 
 }
 
-/*
-    }
-    */
