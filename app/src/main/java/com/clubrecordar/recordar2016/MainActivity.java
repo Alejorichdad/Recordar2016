@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity{
         else
             lManager = new LinearLayoutManager(this);
 
-            recycler.setLayoutManager(lManager);
+        recycler.setLayoutManager(lManager);
 
         //Crear un nuevo adaptador
         adapter = new AlianzasAdaptador(items);

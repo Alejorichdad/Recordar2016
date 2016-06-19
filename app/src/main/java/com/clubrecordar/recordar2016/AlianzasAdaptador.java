@@ -6,40 +6,41 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
 /**
  * GRUPO1
- * Este es el adaptador de las Alianzas del primer grupo y la ManiActivity
+ * Este es el adaptador de las Alianzas del primer grupo y para la MainActivity
  * Created by A on 17/05/2016.
  *
  */
 public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.AlianzasViewHolder> {
-   private List<Alianzas> items;
+    private List<Alianzas> items;
 
-   public static class AlianzasViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-   // campos respectivos de un item
-       public ImageView idImagen;
-       public TextView titulo_imagen;
-       public TextView beneficio;
+    public static class AlianzasViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+        // campos respectivos de un item
+        public ImageView idImagen;
+        public TextView titulo_imagen;
+        public TextView beneficio;
 
-       public AlianzasViewHolder (View v){
-           super(v);
-           itemView.setOnClickListener(this);
+        public AlianzasViewHolder (View v){
+            super(v);
+            itemView.setOnClickListener(this);
 
-           idImagen = (ImageView) v.findViewById(R.id.idImagen);
-           titulo_imagen = (TextView) v.findViewById(R.id.titulo_imagen);
-           beneficio = (TextView) v.findViewById(R.id.beneficio);
+            idImagen = (ImageView) v.findViewById(R.id.idImagen);
+            titulo_imagen = (TextView) v.findViewById(R.id.titulo_imagen);
+            beneficio = (TextView) v.findViewById(R.id.beneficio);
 
-       }
+        }
 
-       @Override
-       public void onClick(View v) {
+        @Override
+        public void onClick(View v) {
 
-          // Toast.makeText(v.getContext(),"CLIKC",Toast.LENGTH_SHORT).show();
-       }
-   }
+            Toast.makeText(v.getContext(), "CLIKC", Toast.LENGTH_SHORT).show();
+        }
+    }
 
     public  AlianzasAdaptador(List<Alianzas> items){ this.items = items;}
 
@@ -55,14 +56,14 @@ public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.Al
         return new AlianzasViewHolder(v);
     }
 
-        @Override
-        public void onBindViewHolder(AlianzasViewHolder viewHolder, int i) {
-            viewHolder.idImagen.setImageResource(items.get(i).getIdImagen());
-            viewHolder.titulo_imagen.setText(items.get(i).getTitulo_imagen());
-            viewHolder.beneficio.setText(items.get(i).getBeneficio());
+    @Override
+    public void onBindViewHolder(AlianzasViewHolder viewHolder, int i) {
+        viewHolder.idImagen.setImageResource(items.get(i).getIdImagen());
+        viewHolder.titulo_imagen.setText(items.get(i).getTitulo_imagen());
+        viewHolder.beneficio.setText(items.get(i).getBeneficio());
 
-           // viewHolder.beneficio.setText("Beneficio:"+String.valueOf(items.get(i).getBeneficio()));
-        }
+        // viewHolder.beneficio.setText("Beneficio:"+String.valueOf(items.get(i).getBeneficio()));
+    }
 
 
 
