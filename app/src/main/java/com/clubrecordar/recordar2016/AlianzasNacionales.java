@@ -47,7 +47,7 @@ public class AlianzasNacionales extends AppCompatActivity{
 
         //Obtener el recycler
 
-        recycler = (RecyclerView) findViewById(R.id.reciclador);
+        recycler = (RecyclerView) findViewById(R.id.reciclador2);
         recycler.setHasFixedSize(true);
 
         // Usar un administrador para LinearLayout y dejar  dos columnas para recicler

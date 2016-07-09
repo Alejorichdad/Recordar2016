@@ -1,5 +1,7 @@
 package com.clubrecordar.recordar2016;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,7 +10,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.List;
+import com.squareup.picasso.Picasso;
+
+import java.util.ArrayList;
 
 /**
  * GRUPO1
@@ -17,9 +21,11 @@ import java.util.List;
  *
  */
 public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.AlianzasViewHolder> {
-    private List<Alianzas> items;
+    private ArrayList<Alianzas> items;
+    Context context;
+    private Intent intent;
 
-    public static class AlianzasViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class AlianzasViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         // campos respectivos de un item
         public ImageView idImagen;
         public TextView titulo_imagen;
@@ -27,6 +33,7 @@ public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.Al
 
         public AlianzasViewHolder (View v){
             super(v);
+            context = v.getContext();
             itemView.setOnClickListener(this);
 
             idImagen = (ImageView) v.findViewById(R.id.idImagen);
@@ -37,12 +44,30 @@ public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.Al
 
         @Override
         public void onClick(View v) {
+            intent = new Intent(context, AlianzasNacionales.class);
+            context.startActivity(intent);
+            Toast.makeText(v.getContext(), context.toString(), Toast.LENGTH_SHORT).show();
+        }
 
-            Toast.makeText(v.getContext(), "CLIKC", Toast.LENGTH_SHORT).show();
+        public void setTitle(String title){
+            titulo_imagen.setText(title);
+        }
+
+        public void setBenefit(String benefit){
+            beneficio.setText(benefit);
+        }
+
+        public void setImage(int urlImg){
+            //Log.e(context.toString(),"ssss");
+            Picasso.with(context)
+                    .load(urlImg)
+                    .fit()
+                    .centerCrop()
+                    .into(idImagen);
         }
     }
 
-    public  AlianzasAdaptador(List<Alianzas> items){ this.items = items;}
+    public  AlianzasAdaptador(ArrayList<Alianzas> items){ this.items = items;}
 
     @Override
     public int getItemCount() {
@@ -58,9 +83,15 @@ public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.Al
 
     @Override
     public void onBindViewHolder(AlianzasViewHolder viewHolder, int i) {
-        viewHolder.idImagen.setImageResource(items.get(i).getIdImagen());
+        /*viewHolder.idImagen.setImageResource(items.get(i).getIdImagen());
         viewHolder.titulo_imagen.setText(items.get(i).getTitulo_imagen());
-        viewHolder.beneficio.setText(items.get(i).getBeneficio());
+        viewHolder.beneficio.setText(items.get(i).getBeneficio());*/
+
+        Alianzas currentItem = items.get(i);
+        viewHolder.setTitle(currentItem.getTitulo_imagen());
+        viewHolder.setBenefit(currentItem.getBeneficio());
+        viewHolder.setImage(currentItem.getIdImagen());
+
 
         // viewHolder.beneficio.setText("Beneficio:"+String.valueOf(items.get(i).getBeneficio()));
     }

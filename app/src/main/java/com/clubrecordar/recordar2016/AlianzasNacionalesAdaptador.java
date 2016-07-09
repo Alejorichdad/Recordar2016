@@ -1,5 +1,6 @@
 package com.clubrecordar.recordar2016;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -17,8 +20,9 @@ import java.util.List;
  */
 public class AlianzasNacionalesAdaptador extends RecyclerView.Adapter<AlianzasNacionalesAdaptador.DatosAlianzasNacionalesViewHolder> {
     private List<DatosAlianzasNacionales> items;
+    Context context;
 
-    public static class DatosAlianzasNacionalesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class DatosAlianzasNacionalesViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         // campos respectivos de un item
         public ImageView idImagen;
         public TextView titulo_imagen;
@@ -26,6 +30,7 @@ public class AlianzasNacionalesAdaptador extends RecyclerView.Adapter<AlianzasNa
 
         public DatosAlianzasNacionalesViewHolder (View v){
             super(v);
+            context = v.getContext();
             itemView.setOnClickListener(this);
 
             idImagen = (ImageView) v.findViewById(R.id.idImagen);
@@ -37,6 +42,23 @@ public class AlianzasNacionalesAdaptador extends RecyclerView.Adapter<AlianzasNa
         @Override
         public void onClick(View v) {
             Toast.makeText(v.getContext(),"CLIKC",Toast.LENGTH_SHORT).show();
+        }
+
+        public void setTitle(String title){
+            titulo_imagen.setText(title);
+        }
+
+        public void setBenefit(String benefit){
+            beneficio.setText(benefit);
+        }
+
+        public void setImage(int urlImg){
+            //Log.e(context.toString(),"ssss");
+            Picasso.with(context)
+                    .load(urlImg)
+                    .fit()
+                    .centerCrop()
+                    .into(idImagen);
         }
     }
 
@@ -56,9 +78,14 @@ public class AlianzasNacionalesAdaptador extends RecyclerView.Adapter<AlianzasNa
 
     @Override
     public void onBindViewHolder(DatosAlianzasNacionalesViewHolder viewHolder, int i) {
-        viewHolder.idImagen.setImageResource(items.get(i).getIdImagen());
+        /*viewHolder.idImagen.setImageResource(items.get(i).getIdImagen());
         viewHolder.titulo_imagen.setText(items.get(i).getTitulo_imagen());
-        viewHolder.beneficio.setText(items.get(i).getBeneficio());
+        viewHolder.beneficio.setText(items.get(i).getBeneficio());*/
+
+        DatosAlianzasNacionales currentItem = items.get(i);
+        viewHolder.setTitle(currentItem.getTitulo_imagen());
+        viewHolder.setBenefit(currentItem.getBeneficio());
+        viewHolder.setImage(currentItem.getIdImagen());
 
         // viewHolder.beneficio.setText("Beneficio:"+String.valueOf(items.get(i).getBeneficio()));
     }

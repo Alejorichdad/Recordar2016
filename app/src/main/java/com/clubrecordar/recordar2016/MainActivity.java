@@ -8,13 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
-
-
-
-
 
     /*
     GRUPO 1
@@ -36,7 +31,7 @@ public class MainActivity extends AppCompatActivity{
 
         // Inicializar Alianzas
 
-        List<Alianzas> items = new ArrayList<>();
+        ArrayList<Alianzas> items = new ArrayList<>();
 
         items.add(new Alianzas(R.drawable.a_nacional, "Alianzas", "Alianzas por todo el pais"));
         items.add(new Alianzas(R.drawable.ingles, "Curso Online", "Aprende inglés ¡¡ya!!"));

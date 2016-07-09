@@ -4,5 +4,6 @@
     <string name="titulo_imagen1">Titulo imagen</string>
     <string name="beneficio1">Beneficio</string>
     <string name="title_activity_alianzas_nacionales">AlianzasNacionales</string>
+    <string name="title_activity_test">TestActivity</string>
 
 </resources>
