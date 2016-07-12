@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -31,6 +30,10 @@ public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.Al
         public TextView titulo_imagen;
         public TextView beneficio;
 
+
+
+        //public String COURSE_URL = "http://clubrecordar.com/foro/";
+
         public AlianzasViewHolder (View v){
             super(v);
             context = v.getContext();
@@ -44,10 +47,31 @@ public class AlianzasAdaptador extends RecyclerView.Adapter<AlianzasAdaptador.Al
 
         @Override
         public void onClick(View v) {
-            intent = new Intent(context, AlianzasNacionales.class);
-            context.startActivity(intent);
-            Toast.makeText(v.getContext(), context.toString(), Toast.LENGTH_SHORT).show();
+            switch (getLayoutPosition()){
+                case 0:
+                    intent = new Intent(context, AlianzasNacionales.class);
+                    context.startActivity(intent);
+                    break;
+                case 1:
+                    intent = new Intent(context, CourseActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 2:
+                    intent = new Intent(context, StoreActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 3:
+                    intent = new Intent(context, EventsActivity.class);
+                    context.startActivity(intent);
+                    break;
+            }
+            //intent = new Intent(context, AlianzasNacionales.class);
+            //context.startActivity(intent);
+            //Toast.makeText(v.getContext(), "Position: " + getLayoutPosition(), Toast.LENGTH_LONG).show();
         }
+
+
+
 
         public void setTitle(String title){
             titulo_imagen.setText(title);
