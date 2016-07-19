@@ -16,24 +16,36 @@ public class EventsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
-
-
-        mPbar = (ProgressBar)findViewById(R.id.web_view_progress);
-
         eventsWebView = (WebView)findViewById(R.id.events);
-        eventsWebView.setWebViewClient(new WebViewClient(){
-            @Override
-            public void onPageStarted(WebView view, String url, Bitmap favicon) {
-                super.onPageStarted(view, url, favicon);
-                mPbar.setVisibility(View.VISIBLE);
-            }
-
-            @Override
-            public void onPageFinished(WebView view, String url) {
-                super.onPageFinished(view, url);
-                mPbar.setVisibility(View.GONE);
-            }
-        });
+        mPbar = (ProgressBar)findViewById(R.id.web_view_progress);
+        eventsWebView.setWebViewClient(new customEventWebView());
+        eventsWebView.getSettings().setJavaScriptEnabled(true);
         eventsWebView.loadUrl(EVENTS_URL);
+
+    }
+
+    public class customEventWebView extends WebViewClient {
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon) {
+            super.onPageStarted(view, url, favicon);
+        }
+
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, String url){
+            mPbar.setVisibility(View.VISIBLE);
+            view.loadUrl(url);
+            return true;
+        }
+
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+            mPbar.setVisibility(View.GONE);
+        }
+
+        @Override
+        public void onLoadResource(WebView view, String url) {
+            super.onLoadResource(view, url);
+        }
     }
 }
