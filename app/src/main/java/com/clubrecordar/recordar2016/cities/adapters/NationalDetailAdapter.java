@@ -8,10 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.clubrecordar.recordar2016.R;
 import com.clubrecordar.recordar2016.cities.models.NationalModel;
+import com.clubrecordar.recordar2016.details.national.NationalDetFirstActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -48,7 +48,9 @@ public class NationalDetailAdapter extends RecyclerView.Adapter<NationalDetailAd
 
             switch (getLayoutPosition()){
                 case 0:
-                    Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, NationalDetFirstActivity.class);
+                    context.startActivity(intent);
                     break;
 
             }

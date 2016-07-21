@@ -32,14 +32,18 @@
         <activity android:name=".CourseActivity" />
         <activity android:name=".StoreActivity" />
         <activity android:name=".EventsActivity" />
-        <activity android:name=".cities.NationalAlianceActivity" />
+        <activity
+            android:name=".cities.NationalAlianceActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".cities.BarranquillaAliance" />
         <activity android:name=".cities.BogotaAlicance" />
         <activity android:name=".cities.BoyacaAliance" />
         <activity android:name=".cities.CaliAlianceActivity" />
         <activity android:name=".cities.CartagenaAlianceActivity" />
         <activity android:name=".cities.ValleAlianceActivity" />
-        <activity android:name=".cities.PastoAlianceActivity"></activity>
+        <activity android:name=".cities.PastoAlianceActivity" />
+        <activity android:name=".details.national.NationalDetFirstActivity"></activity>
     </application>
 
 </manifest>
