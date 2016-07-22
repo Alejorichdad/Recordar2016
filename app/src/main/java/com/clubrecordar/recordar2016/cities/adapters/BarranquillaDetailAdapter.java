@@ -10,28 +10,29 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
-import com.clubrecordar.recordar2016.cities.models.NationalModel;
-import com.clubrecordar.recordar2016.detailsItem.national.NationalDetFirstActivity;
+import com.clubrecordar.recordar2016.cities.models.BarranquillaModel;
+import com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetFirstActivity;
+import com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetSecActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 /**
- * Created by willians on 18/7/16.
+ * Created by willians on 22/7/16.
  */
-public class NationalDetailAdapter extends RecyclerView.Adapter<NationalDetailAdapter.NationalDetailViewHolder> {
-
-    private List<NationalModel> items;
+public class BarranquillaDetailAdapter extends RecyclerView.Adapter<BarranquillaDetailAdapter.BarranquillaDetailViewHolder> {
+    private List<BarranquillaModel> items;
     Context context;
     private Intent intent;
 
-    public class NationalDetailViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+
+    public class BarranquillaDetailViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         // campos respectivos de un item
         public ImageView idImagen;
         public TextView titulo_imagen;
         public TextView beneficio;
 
-        public NationalDetailViewHolder (View v){
+        public BarranquillaDetailViewHolder (View v){
             super(v);
             context = v.getContext();
             itemView.setOnClickListener(this);
@@ -49,7 +50,13 @@ public class NationalDetailAdapter extends RecyclerView.Adapter<NationalDetailAd
             switch (getLayoutPosition()){
                 case 0:
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
-                    intent = new Intent(context, NationalDetFirstActivity.class);
+                    intent = new Intent(context, BarranquillaDetFirstActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 1:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, BarranquillaDetSecActivity.class);
                     context.startActivity(intent);
                     break;
 
@@ -74,18 +81,20 @@ public class NationalDetailAdapter extends RecyclerView.Adapter<NationalDetailAd
         }
     }
 
-    public  NationalDetailAdapter(List<NationalModel> items){this.items = items;}
-
-    @Override
-    public NationalDetailViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View v = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.national_card, viewGroup, false);
-        return new NationalDetailViewHolder(v);
+    public BarranquillaDetailAdapter(List<BarranquillaModel> items) {
+        this.items = items;
     }
 
     @Override
-    public void onBindViewHolder(NationalDetailViewHolder viewHolder, int i) {
-        NationalModel currentItem = items.get(i);
+    public BarranquillaDetailViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View v = LayoutInflater.from(viewGroup.getContext())
+                .inflate(R.layout.barranquilla_card, viewGroup, false);
+        return new BarranquillaDetailViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(BarranquillaDetailViewHolder viewHolder, int position) {
+        BarranquillaModel currentItem = items.get(position);
         viewHolder.setTitle(currentItem.getTitulo_imagen());
         viewHolder.setBenefit(currentItem.getBeneficio());
         viewHolder.setImage(currentItem.getIdImagen());

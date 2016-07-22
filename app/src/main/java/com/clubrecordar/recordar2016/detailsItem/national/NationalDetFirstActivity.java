@@ -1,4 +1,4 @@
-package com.clubrecordar.recordar2016.details.national;
+package com.clubrecordar.recordar2016.detailsItem.national;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +16,5 @@ public class NationalDetFirstActivity extends AppCompatActivity {
 
         wrapper = (LinearLayout)findViewById(R.id.wrapperDetail);
         wrapper.setAlpha((float) 0.8);
-
     }
 }

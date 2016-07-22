@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.clubrecordar.recordar2016.detailsItem.national.NationalDetFirstActivity">
+    tools:context="com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetFirstActivity">
 
     <ImageView
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="titulo "
+            android:text="@string/barranquilla_title_first"
             android:id="@+id/textView"
             android:gravity="center"
             android:textAlignment="center"
@@ -37,44 +37,49 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Descripcion del item "
+            android:layout_height="73dp"
+            android:text="@string/barranquilla_desc_first"
             android:id="@+id/textViewDetail"
             android:gravity="center"
             android:textAlignment="center"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            android:maxLines="200"
+            android:scrollbars="vertical"/>
 
         <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/ic_maps"
+            android:onClick="geolocationFind"
             android:layout_gravity="right"
             android:scaleType="centerCrop"
             android:nestedScrollingEnabled="false"
             android:background="@android:color/transparent"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
 
         <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/ic_email"
+            android:onClick="sendEmail"
             android:layout_gravity="center"
             android:scaleType="centerCrop"
             android:nestedScrollingEnabled="false"
             android:background="@android:color/transparent"
-            android:layout_marginTop="-100dp" />
+            android:layout_marginTop="-80dp" />
 
         <ImageButton
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/ic_phone"
             android:layout_gravity="left"
             android:scaleType="centerCrop"
+            android:onClick="triggerCall"
             android:nestedScrollingEnabled="false"
             android:background="@android:color/transparent"
-            android:layout_marginTop="-100dp"
+            android:layout_marginTop="-80dp"
             android:layout_marginLeft="10dp"/>
 
 
