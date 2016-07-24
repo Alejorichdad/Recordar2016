@@ -1,87 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetFirstActivity">
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp">
 
-    <ImageView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/firstNationalImg"
-        android:src="@drawable/a_nacional"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:scaleType="centerCrop"
-        android:adjustViewBounds="false"
-        android:cropToPadding="false" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:background="#fff"
-        android:id="@+id/wrapperDetail"
-        android:layout_alignBottom="@+id/firstNationalImg"
-        android:layout_alignStart="@+id/firstNationalImg">
-
-        <TextView
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/barranquilla_title_first"
-            android:id="@+id/textView"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
 
-        <TextView
+            <ImageView
+                android:id="@+id/idImagen"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idImagen"
+                android:maxLines="3"
+                android:padding="8dp"
+                android:text="@string/barranquilla_title_first"
+                android:textColor="#2d2c2c"
+                android:textStyle="bold"
+                android:textSize="22dp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:text="@string/barranquilla_desc_first"
-            android:id="@+id/textViewDetail"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:maxLines="200"
-            android:scrollbars="vertical"/>
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
 
-        <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_maps"
-            android:onClick="geolocationFind"
-            android:layout_gravity="right"
-            android:scaleType="centerCrop"
-            android:nestedScrollingEnabled="false"
-            android:background="@android:color/transparent"
-            android:layout_marginRight="10dp"
-            android:layout_marginTop="10dp" />
 
-        <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_email"
-            android:onClick="sendEmail"
-            android:layout_gravity="center"
-            android:scaleType="centerCrop"
-            android:nestedScrollingEnabled="false"
-            android:background="@android:color/transparent"
-            android:layout_marginTop="-80dp" />
+            <TextView
+                android:id="@+id/beneficio"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="@string/barranquilla_desc_first"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:maxLines="200"
+                android:scrollbars="vertical"/>
 
-        <ImageButton
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/ic_phone"
-            android:layout_gravity="left"
-            android:scaleType="centerCrop"
-            android:onClick="triggerCall"
-            android:nestedScrollingEnabled="false"
-            android:background="@android:color/transparent"
-            android:layout_marginTop="-80dp"
-            android:layout_marginLeft="10dp"/>
+        </LinearLayout>
 
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:id="@+id/wrapperDetail"
+            android:layout_alignBottom="@+id/firstNationalImg"
+            android:layout_alignStart="@+id/firstNationalImg"
+            android:layout_marginTop="-10dp"
+            android:gravity="bottom">
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_maps"
+                android:layout_gravity="right"
+                android:onClick="geolocationFind"
+                android:scaleType="centerCrop"
+                android:nestedScrollingEnabled="false"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-20dp" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_phone"
+                android:layout_gravity="left"
+                android:onClick="triggerCall"
+                android:scaleType="centerCrop"
+                android:nestedScrollingEnabled="false"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="-40dp"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_email"
+                android:layout_gravity="center_horizontal"
+                android:onClick="sendEmail"
+                android:scaleType="centerCrop"
+                android:nestedScrollingEnabled="false"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="-60dp" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
-</RelativeLayout>
+</android.support.v7.widget.CardView>

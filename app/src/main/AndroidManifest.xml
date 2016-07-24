@@ -3,7 +3,6 @@
     package="com.clubrecordar.recordar2016">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
 
     <application
         android:allowBackup="true"
@@ -44,8 +43,10 @@
         <activity android:name=".cities.CartagenaAlianceActivity" />
         <activity android:name=".cities.ValleAlianceActivity" />
         <activity android:name=".cities.PastoAlianceActivity" />
-        <activity android:name=".details.national.NationalDetFirstActivity" />
-        <activity android:name=".detailsItem.barranquilla.BarranquillaDetFirstActivity" />
+        <activity
+            android:name=".detailsItem.barranquilla.BarranquillaDetFirstActivity"
+            android:screenOrientation="portrait"
+            />
         <activity android:name=".detailsItem.bogota.BogotaDetFirstActivity" />
         <activity android:name=".detailsItem.national.NationalDetFirstActivity" />
         <activity android:name=".detailsItem.boyaca.BoyacaDetFirstActivity" />
@@ -53,7 +54,10 @@
         <activity android:name=".detailsItem.cartagena.CartagenaDetFirstActivity" />
         <activity android:name=".detailsItem.valledupar.ValleDetFirstActivity" />
         <activity android:name=".detailsItem.pasto.PastoDetFirstActivity" />
-        <activity android:name=".detailsItem.barranquilla.BarranquillaDetSecActivity"></activity>
+        <activity
+            android:name=".detailsItem.barranquilla.BarranquillaDetSecActivity"
+            android:screenOrientation="portrait"
+            ></activity>
     </application>
 
 </manifest>

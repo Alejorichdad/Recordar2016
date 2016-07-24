@@ -26,8 +26,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_gravity="center_horizontal"
-                android:scaleType="centerCrop"
-                android:src="@drawable/alianzas"/>
+                android:src="@drawable/logo"
+                android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/title"
@@ -36,11 +36,10 @@
                 android:layout_below="@+id/idImagen"
                 android:maxLines="3"
                 android:padding="8dp"
-                android:text="@string/barranquilla_title_first"
+                android:text="@string/barranquilla_title_sec"
                 android:textColor="#2d2c2c"
                 android:textStyle="bold"
-                android:textSize="22dp"
-                android:layout_marginTop="-50dp" />
+                android:textSize="22dp" />
         </RelativeLayout>
 
 
@@ -56,8 +55,8 @@
             <TextView
                 android:id="@+id/beneficio"
                 android:layout_width="wrap_content"
-                android:layout_height="107dp"
-                android:text="@string/barranquilla_desc_first"
+                android:layout_height="80dp"
+                android:text="@string/barranquilla_desc_sec"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:maxLines="200"
                 android:scrollbars="vertical"/>
@@ -76,8 +75,8 @@
             android:gravity="bottom">
 
             <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/ic_maps"
                 android:layout_gravity="right"
                 android:onClick="geolocationFind"
@@ -85,30 +84,31 @@
                 android:nestedScrollingEnabled="false"
                 android:background="@android:color/transparent"
                 android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="-20dp" />
 
             <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:src="@drawable/ic_email"
-                android:layout_gravity="center"
-                android:onClick="sendEmail"
-                android:scaleType="centerCrop"
-                android:nestedScrollingEnabled="false"
-                android:background="@android:color/transparent"
-                android:layout_marginTop="-80dp" />
-
-            <ImageButton
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/ic_phone"
                 android:layout_gravity="left"
                 android:onClick="triggerCall"
                 android:scaleType="centerCrop"
                 android:nestedScrollingEnabled="false"
                 android:background="@android:color/transparent"
-                android:layout_marginTop="-80dp"
+                android:layout_marginTop="-40dp"
                 android:layout_marginLeft="10dp"/>
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_email"
+                android:layout_gravity="center_horizontal"
+                android:onClick="sendEmail"
+                android:scaleType="centerCrop"
+                android:nestedScrollingEnabled="false"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="-60dp" />
 
 
         </LinearLayout>

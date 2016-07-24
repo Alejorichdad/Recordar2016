@@ -1,11 +1,8 @@
 package com.clubrecordar.recordar2016.detailsItem.barranquilla;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
@@ -23,27 +20,16 @@ public class BarranquillaDetFirstActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_barranquilla_det_first);
 
-        description = (TextView) findViewById(R.id.textViewDetail);
+        description = (TextView) findViewById(R.id.beneficio);
 
         description.setMovementMethod(new ScrollingMovementMethod());
     }
 
     public void triggerCall(View v) {
-        String number = "tel:" + phoneNumber;
-        Intent callIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(number));
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            startActivity(callIntent);
-            //return;
-        }
-
-        //Toast.makeText(v.getContext(), "Llamada: ", Toast.LENGTH_LONG).show();
+        String number = "tel:" + phoneNumber.toString();
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
+        callIntent.setData(Uri.parse(number));
+        startActivity(callIntent);
     }
 
     public void geolocationFind(View v){
