@@ -36,13 +36,37 @@
             android:name=".cities.NationalAlianceActivity"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".cities.BarranquillaAliance" />
-        <activity android:name=".cities.BogotaAlicance" />
-        <activity android:name=".cities.BoyacaAliance" />
-        <activity android:name=".cities.CaliAlianceActivity" />
-        <activity android:name=".cities.CartagenaAlianceActivity" />
-        <activity android:name=".cities.ValleAlianceActivity" />
-        <activity android:name=".cities.PastoAlianceActivity" />
+        <activity
+            android:name=".cities.BarranquillaAliance"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".cities.BogotaAlicance"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".cities.BoyacaAliance"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".cities.CaliAlianceActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".cities.CartagenaAlianceActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".cities.ValleAlianceActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".cities.PastoAlianceActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".detailsItem.barranquilla.BarranquillaDetFirstActivity"
             android:screenOrientation="portrait"

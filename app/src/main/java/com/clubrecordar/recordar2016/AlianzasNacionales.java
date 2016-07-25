@@ -35,14 +35,14 @@ public class AlianzasNacionales extends AppCompatActivity{
 
         List<DatosAlianzasNacionales> items = new ArrayList<>();
 
-        items.add(new DatosAlianzasNacionales(R.drawable.a_nacional, "Alianzas Nacionales", "Alianzas por todo el pais"));
-        items.add(new DatosAlianzasNacionales(R.drawable.ingles, "Alianzas Barranquilla", "Aprende inglés ¡¡ya!!"));
-        items.add(new DatosAlianzasNacionales(R.drawable.tienda, "Alianzas Bogotá", "Más y mejores ofertas Club"));
-        items.add(new DatosAlianzasNacionales(R.drawable.a_nacional, "Alianzas Boyacá", "Alianzas por todo el pais"));
-        items.add(new DatosAlianzasNacionales(R.drawable.ingles, "Alianzas Cali", "Aprende inglés ¡¡ya!!"));
-        items.add(new DatosAlianzasNacionales(R.drawable.tienda, "Alianzas Cartagena", "Más y mejores ofertas Club"));
-        items.add(new DatosAlianzasNacionales(R.drawable.a_nacional, "Alianzas Valledupar", "Alianzas por todo el pais"));
-        items.add(new DatosAlianzasNacionales(R.drawable.a_nacional, "Alianzas Pasto", "Alianzas por todo el pais"));
+        items.add(new DatosAlianzasNacionales(R.drawable.alianzas, "Alianzas Nacionales", "Alianzas por todo el pais"));
+        items.add(new DatosAlianzasNacionales(R.drawable.barranquilla, "Alianzas Barranquilla", "Aprende inglés ¡¡ya!!"));
+        items.add(new DatosAlianzasNacionales(R.drawable.bogota, "Alianzas Bogotá", "Más y mejores ofertas Club"));
+        items.add(new DatosAlianzasNacionales(R.drawable.boyaca, "Alianzas Boyacá", "Alianzas por todo el pais"));
+        items.add(new DatosAlianzasNacionales(R.drawable.cali, "Alianzas Cali", "Aprende inglés ¡¡ya!!"));
+        items.add(new DatosAlianzasNacionales(R.drawable.cartagena, "Alianzas Cartagena", "Más y mejores ofertas Club"));
+        items.add(new DatosAlianzasNacionales(R.drawable.valledupar, "Alianzas Valledupar", "Alianzas por todo el pais"));
+        items.add(new DatosAlianzasNacionales(R.drawable.pasto, "Alianzas Pasto", "Alianzas por todo el pais"));
 
 
         //Obtener el recycler
