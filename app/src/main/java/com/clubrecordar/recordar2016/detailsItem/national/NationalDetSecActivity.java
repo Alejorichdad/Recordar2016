@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 
-public class NationalDetFirstActivity extends AppCompatActivity {
+public class NationalDetSecActivity extends AppCompatActivity {
     TextView description;
     String phoneNumber = "12345678";
     Uri gmmIntentUri = Uri.parse("geo:37.7749,-122.4194?q=37.7749,-122.4194");
@@ -17,7 +17,7 @@ public class NationalDetFirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_national_det_first);
+        setContentView(R.layout.activity_national_det_sec);
     }
 
     public void triggerCall(View v) {

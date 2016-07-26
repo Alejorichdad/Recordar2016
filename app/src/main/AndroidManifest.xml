@@ -39,38 +39,34 @@
         <activity
             android:name=".cities.BarranquillaAliance"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".cities.BogotaAlicance"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".cities.BoyacaAliance"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            />
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".cities.CaliAlianceActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".cities.CartagenaAlianceActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".cities.ValleAlianceActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".cities.PastoAlianceActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".detailsItem.barranquilla.BarranquillaDetFirstActivity"
-            android:screenOrientation="portrait"
-            />
+            android:screenOrientation="portrait" />
         <activity android:name=".detailsItem.bogota.BogotaDetFirstActivity" />
         <activity android:name=".detailsItem.national.NationalDetFirstActivity" />
         <activity android:name=".detailsItem.boyaca.BoyacaDetFirstActivity" />
@@ -80,8 +76,21 @@
         <activity android:name=".detailsItem.pasto.PastoDetFirstActivity" />
         <activity
             android:name=".detailsItem.barranquilla.BarranquillaDetSecActivity"
-            android:screenOrientation="portrait"
-            ></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".detailsItem.national.NationalDetSecActivity" />
+        <activity android:name=".detailsItem.national.NationalDetThirdActivity" />
+        <activity android:name=".detailsItem.national.NationalDetFourthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetFifthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetSixthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetSeventhActivity" />
+        <activity android:name=".detailsItem.national.NationalDetEighthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetNinthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetTenthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetEleventhActivity" />
+        <activity android:name=".detailsItem.national.NationalDetTwelvethActivity" />
+        <activity android:name=".detailsItem.national.NationalDetThirteenthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetFourteenthActivity" />
+        <activity android:name=".detailsItem.national.NationalDetFifteenthActivity"></activity>
     </application>
 
 </manifest>
