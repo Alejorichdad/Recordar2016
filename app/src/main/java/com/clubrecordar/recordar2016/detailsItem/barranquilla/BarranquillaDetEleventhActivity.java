@@ -1,16 +1,16 @@
-package com.clubrecordar.recordar2016.detailsItem.boyaca;
+package com.clubrecordar.recordar2016.detailsItem.barranquilla;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 
-public class BoyacaDetFirstActivity extends AppCompatActivity {
+public class BarranquillaDetEleventhActivity extends AppCompatActivity {
 
     TextView description;
     String phoneNumber = "12345678";
@@ -19,7 +19,7 @@ public class BoyacaDetFirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boyaca_det_first);
+        setContentView(R.layout.activity_barranquilla_det_eleventh);
 
         description = (TextView)findViewById(R.id.beneficio);
 
@@ -51,6 +51,4 @@ public class BoyacaDetFirstActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
         //Toast.makeText(v.getContext(), "Correo: ", Toast.LENGTH_LONG).show();
     }
-
-
 }

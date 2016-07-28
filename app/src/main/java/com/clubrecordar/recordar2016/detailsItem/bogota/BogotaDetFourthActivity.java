@@ -1,4 +1,4 @@
-package com.clubrecordar.recordar2016.detailsItem.boyaca;
+package com.clubrecordar.recordar2016.detailsItem.bogota;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 
-public class BoyacaDetFirstActivity extends AppCompatActivity {
+public class BogotaDetFourthActivity extends AppCompatActivity {
 
     TextView description;
     String phoneNumber = "12345678";
@@ -19,7 +19,7 @@ public class BoyacaDetFirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_boyaca_det_first);
+        setContentView(R.layout.activity_bogota_det_fourth);
 
         description = (TextView)findViewById(R.id.beneficio);
 
@@ -51,6 +51,4 @@ public class BoyacaDetFirstActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
         //Toast.makeText(v.getContext(), "Correo: ", Toast.LENGTH_LONG).show();
     }
-
-
 }
