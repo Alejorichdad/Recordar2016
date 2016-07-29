@@ -1,4 +1,4 @@
-package com.clubrecordar.recordar2016.detailsItem.pasto;
+package com.clubrecordar.recordar2016.detailsItem.cartagena;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 
-public class PastoDetFirstActivity extends AppCompatActivity {
+public class CartagenaDetEleventhActivity extends AppCompatActivity {
 
     TextView description;
     String phoneNumber = "12345678";
@@ -19,7 +19,7 @@ public class PastoDetFirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pasto_det_first);
+        setContentView(R.layout.activity_cartagena_det_eleventh);
 
         description = (TextView)findViewById(R.id.beneficio);
 

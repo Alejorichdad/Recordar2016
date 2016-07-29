@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 
-public class PastoDetFirstActivity extends AppCompatActivity {
+public class PastoDetFourteenthActivity extends AppCompatActivity {
 
     TextView description;
     String phoneNumber = "12345678";
@@ -19,8 +19,7 @@ public class PastoDetFirstActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pasto_det_first);
-
+        setContentView(R.layout.activity_pasto_det_fourteenth);
         description = (TextView)findViewById(R.id.beneficio);
 
         description.setMovementMethod(new ScrollingMovementMethod());
@@ -51,4 +50,5 @@ public class PastoDetFirstActivity extends AppCompatActivity {
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
         //Toast.makeText(v.getContext(), "Correo: ", Toast.LENGTH_LONG).show();
     }
+
 }
