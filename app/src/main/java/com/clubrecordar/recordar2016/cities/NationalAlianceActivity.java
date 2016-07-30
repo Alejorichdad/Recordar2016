@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import com.clubrecordar.recordar2016.R;
 import com.clubrecordar.recordar2016.cities.adapters.NationalDetailAdapter;
 import com.clubrecordar.recordar2016.cities.models.NationalModel;
+import com.clubrecordar.recordar2016.helpers.cities.ContentNational;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -28,22 +29,7 @@ public class NationalAlianceActivity extends AppCompatActivity {
 
         List<NationalModel> items = new ArrayList<>();
 
-        items.add(new NationalModel(R.drawable.a_nacional, "item1 titulo", "item1 description"));
-        items.add(new NationalModel(R.drawable.ingles, "item2 titulo", "item2 description"));
-        items.add(new NationalModel(R.drawable.tienda, "item3 titulo", "item3 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item4 titulo", "item4 description"));
-        items.add(new NationalModel(R.drawable.ingles, "item5 titulo", "item5 description"));
-        items.add(new NationalModel(R.drawable.tienda, "item6 titulo", "item6 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item7 titulo", "item7 descriptions"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item8 titulo", "item8 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item9 titulo", "item9 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item10 titulo", "item10 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item11 titulo", "item11 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item12 titulo", "item12 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item13 titulo", "item13 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item14 titulo", "item14 description"));
-        items.add(new NationalModel(R.drawable.a_nacional, "item15 titulo", "item15 description"));
-
+        items = ContentNational.getContentNational();
 
         recycler = (RecyclerView) findViewById(R.id.recyclerNational);
         recycler.setHasFixedSize(true);

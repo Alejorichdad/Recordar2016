@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,6 +18,11 @@ public class NationalDetTwelvethActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_national_det_twelveth);
+
+
+        description = (TextView)findViewById(R.id.beneficio);
+
+        description.setMovementMethod(new ScrollingMovementMethod());
     }
 
     public void triggerCall(View v) {

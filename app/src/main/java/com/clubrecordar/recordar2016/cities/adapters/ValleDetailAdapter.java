@@ -11,8 +11,21 @@ import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 import com.clubrecordar.recordar2016.cities.models.ValleModel;
-import com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetFirstActivity;
-import com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetSecActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetEighthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetEleventhActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetFifteenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetFifthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetFirstActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetFourteenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetFourthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetNinthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetSecActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetSeventhActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetSixthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetTenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetThirdActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetThirteenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.valledupar.ValleDetTwelvethActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -50,13 +63,88 @@ public class ValleDetailAdapter extends RecyclerView.Adapter<ValleDetailAdapter.
             switch (getLayoutPosition()){
                 case 0:
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
-                    intent = new Intent(context, BarranquillaDetFirstActivity.class);
+                    intent = new Intent(context, ValleDetFirstActivity.class);
                     context.startActivity(intent);
                     break;
 
                 case 1:
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
-                    intent = new Intent(context, BarranquillaDetSecActivity.class);
+                    intent = new Intent(context, ValleDetSecActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 2:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetThirdActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 3:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetFourthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 4:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetFifthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 5:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetSixthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 6:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetSeventhActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 7:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetEighthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 8:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetNinthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 9:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetTenthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 10:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetEleventhActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 11:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetTwelvethActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 12:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetThirteenthActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 13:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetFourteenthActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 14:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, ValleDetFifteenthActivity.class);
                     context.startActivity(intent);
                     break;
 

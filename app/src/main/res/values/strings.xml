@@ -19,4 +19,31 @@
     </string>
 
 
+    <!-- Recycler view ciudades (8) -->
+    <string name="national_title">Alianzas Nacionales</string>
+    <string name="national_description">Alianzas por todo el pais</string>
+
+    <string name="barranquilla_title">Alianzas Barranquillas</string>
+    <string name="barranquilla_description">Descripcion Alianzas Barranquilla</string>
+
+    <string name="bogota_title">Alianzas Bogota</string>
+    <string name="bogota_description">Descripcion Alianzas Bogota</string>
+
+    <string name="boyaca_title">Alianzas Boyaca</string>
+    <string name="boyaca_description">Descripcion Alianzas Boyaca</string>
+
+    <string name="cali_title">Alianzas Cali</string>
+    <string name="cali_description">Descripcion Alianzas Cali</string>
+
+    <string name="cartagena_title">Alianzas Cartagena</string>
+    <string name="cartagena_description">Descripcion Alianzas Cartagena</string>
+
+    <string name="pasto_title">Alianzas Pasto</string>
+    <string name="pasto_description">Descripcion Alianzas Pasto</string>
+
+    <string name="valle_title">Alianzas Valle</string>
+    <string name="valle_description">Descripcion Alianzas Valle</string>
+
+
+
 </resources>

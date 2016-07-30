@@ -11,8 +11,21 @@ import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
 import com.clubrecordar.recordar2016.cities.models.PastoModel;
-import com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetFirstActivity;
-import com.clubrecordar.recordar2016.detailsItem.barranquilla.BarranquillaDetSecActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetEighthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetEleventhActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetFifteenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetFifthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetFirstActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetFourteenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetFourthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetNinthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetSecActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetSeventhActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetSixthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetTenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetThirdActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetThirteenthActivity;
+import com.clubrecordar.recordar2016.detailsItem.pasto.PastoDetTwelvethActivity;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -50,13 +63,88 @@ public class PastoDetailAdapter extends RecyclerView.Adapter<PastoDetailAdapter.
             switch (getLayoutPosition()){
                 case 0:
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
-                    intent = new Intent(context, BarranquillaDetFirstActivity.class);
+                    intent = new Intent(context, PastoDetFirstActivity.class);
                     context.startActivity(intent);
                     break;
 
                 case 1:
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
-                    intent = new Intent(context, BarranquillaDetSecActivity.class);
+                    intent = new Intent(context, PastoDetSecActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 2:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetThirdActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 3:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetFourthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 4:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetFifthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 5:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetSixthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 6:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetSeventhActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 7:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetEighthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 8:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetNinthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 9:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetTenthActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 10:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetEleventhActivity.class);
+                    context.startActivity(intent);
+                    break;
+
+                case 11:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetTwelvethActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 12:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetThirteenthActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 13:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetFourteenthActivity.class);
+                    context.startActivity(intent);
+                    break;
+                case 14:
+                    //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+                    intent = new Intent(context, PastoDetFifteenthActivity.class);
                     context.startActivity(intent);
                     break;
 

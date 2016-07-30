@@ -35,14 +35,14 @@ public class AlianzasNacionales extends AppCompatActivity{
 
         List<DatosAlianzasNacionales> items = new ArrayList<>();
 
-        items.add(new DatosAlianzasNacionales(R.drawable.alianzas, "Alianzas Nacionales", "Alianzas por todo el pais"));
-        items.add(new DatosAlianzasNacionales(R.drawable.barranquilla, "Alianzas Barranquilla", "Aprende inglés ¡¡ya!!"));
-        items.add(new DatosAlianzasNacionales(R.drawable.bogota, "Alianzas Bogotá", "Más y mejores ofertas Club"));
-        items.add(new DatosAlianzasNacionales(R.drawable.boyaca, "Alianzas Boyacá", "Alianzas por todo el pais"));
-        items.add(new DatosAlianzasNacionales(R.drawable.cali, "Alianzas Cali", "Aprende inglés ¡¡ya!!"));
-        items.add(new DatosAlianzasNacionales(R.drawable.cartagena, "Alianzas Cartagena", "Más y mejores ofertas Club"));
-        items.add(new DatosAlianzasNacionales(R.drawable.valledupar, "Alianzas Valledupar", "Alianzas por todo el pais"));
-        items.add(new DatosAlianzasNacionales(R.drawable.pasto, "Alianzas Pasto", "Alianzas por todo el pais"));
+        items.add(new DatosAlianzasNacionales(R.drawable.alianzas, this.getString(R.string.national_title), this.getString(R.string.national_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.barranquilla, this.getString(R.string.barranquilla_title), this.getString(R.string.barranquilla_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.bogota, this.getString(R.string.bogota_title), this.getString(R.string.bogota_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.boyaca, this.getString(R.string.boyaca_title), this.getString(R.string.boyaca_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.cali, this.getString(R.string.cali_title), this.getString(R.string.cali_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.cartagena, this.getString(R.string.cartagena_title), this.getString(R.string.cartagena_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.valledupar, this.getString(R.string.valle_title), this.getString(R.string.valle_description)));
+        items.add(new DatosAlianzasNacionales(R.drawable.pasto, this.getString(R.string.pasto_title), this.getString(R.string.pasto_description)));
 
 
         //Obtener el recycler
