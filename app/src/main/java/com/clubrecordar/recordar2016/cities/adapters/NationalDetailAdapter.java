@@ -26,7 +26,10 @@ import com.clubrecordar.recordar2016.detailsItem.national.NationalDetTenthActivi
 import com.clubrecordar.recordar2016.detailsItem.national.NationalDetThirdActivity;
 import com.clubrecordar.recordar2016.detailsItem.national.NationalDetThirteenthActivity;
 import com.clubrecordar.recordar2016.detailsItem.national.NationalDetTwelvethActivity;
+import com.clubrecordar.recordar2016.helpers.detail.DetailNational;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
 
 import java.util.List;
 
@@ -38,6 +41,12 @@ public class NationalDetailAdapter extends RecyclerView.Adapter<NationalDetailAd
     private List<NationalModel> items;
     Context context;
     private Intent intent;
+
+    public String title;
+    public String description;
+    public String phone;
+    public String email;
+    public String coords;
 
     public class NationalDetailViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         // campos respectivos de un item
@@ -62,78 +71,306 @@ public class NationalDetailAdapter extends RecyclerView.Adapter<NationalDetailAd
 
             switch (getLayoutPosition()){
                 case 0:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item1").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item1").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item1").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item1").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item1").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetFirstActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 1:
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
+
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item2").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item2").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item2").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item2").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item2").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     intent = new Intent(context, NationalDetSecActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 2:
+
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item3").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item3").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item3").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item3").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item3").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetThirdActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 3:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item4").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item4").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item4").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item4").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item4").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetFourthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 4:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item5").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item5").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item5").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item5").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item5").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetFifthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 5:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item6").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item6").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item6").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item6").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item6").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetSixthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 6:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item7").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item7").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item7").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item7").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item7").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetSeventhActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 7:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item8").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item8").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item8").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item8").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item8").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetEighthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 8:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item9").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item9").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item9").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item9").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item9").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetNinthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 9:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item10").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item10").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item10").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item10").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item10").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetTenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 10:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item11").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item11").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item11").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item11").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item11").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetEleventhActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 11:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item12").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item12").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item12").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item12").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item12").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetTwelvethActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 12:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item13").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item13").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item13").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item13").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item13").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetThirteenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 13:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item14").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item14").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item14").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item14").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item14").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetFourteenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 14:
+                    try {
+                        title = (String) DetailNational.getDetailNational().getJSONObject("item15").get("title");
+                        description = (String) DetailNational.getDetailNational().getJSONObject("item15").get("description");
+                        phone = (String) DetailNational.getDetailNational().getJSONObject("item15").get("phone");
+                        email = (String) DetailNational.getDetailNational().getJSONObject("item15").get("email");
+                        coords = (String) DetailNational.getDetailNational().getJSONObject("item15").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, NationalDetFifteenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 

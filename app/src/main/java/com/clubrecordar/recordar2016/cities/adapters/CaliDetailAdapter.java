@@ -26,7 +26,10 @@ import com.clubrecordar.recordar2016.detailsItem.cali.CaliDetTenthActivity;
 import com.clubrecordar.recordar2016.detailsItem.cali.CaliDetThirdActivity;
 import com.clubrecordar.recordar2016.detailsItem.cali.CaliDetThirteenthActivity;
 import com.clubrecordar.recordar2016.detailsItem.cali.CaliDetTwelvethActivity;
+import com.clubrecordar.recordar2016.helpers.detail.DetailCali;
 import com.squareup.picasso.Picasso;
+
+import org.json.JSONException;
 
 import java.util.List;
 
@@ -37,6 +40,12 @@ public class CaliDetailAdapter extends RecyclerView.Adapter<CaliDetailAdapter.Ca
     private List<CaliModel> items;
     Context context;
     private Intent intent;
+
+    public String title;
+    public String description;
+    public String phone;
+    public String email;
+    public String coords;
 
 
     public class CaliDetailViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
@@ -62,89 +71,314 @@ public class CaliDetailAdapter extends RecyclerView.Adapter<CaliDetailAdapter.Ca
 
             switch (getLayoutPosition()){
                 case 0:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item1").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item1").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item1").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item1").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item1").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetFirstActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 1:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item2").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item2").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item2").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item2").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item2").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetSecActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 2:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item3").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item3").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item3").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item3").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item3").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetThirdActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 3:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item4").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item4").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item4").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item4").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item4").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetFourthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 4:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item5").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item5").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item5").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item5").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item5").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetFifthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 5:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item6").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item6").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item6").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item6").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item6").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetSixthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 6:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item7").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item7").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item7").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item7").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item7").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetSeventhActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 7:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item8").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item8").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item8").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item8").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item8").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetEighthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 8:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item9").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item9").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item9").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item9").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item9").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetNinthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 9:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item10").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item10").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item10").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item10").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item10").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetTenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 10:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item11").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item11").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item11").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item11").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item11").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetEleventhActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 
                 case 11:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item12").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item12").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item12").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item12").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item12").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetTwelvethActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 12:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item13").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item13").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item13").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item13").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item13").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetThirteenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 13:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item14").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item14").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item14").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item14").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item14").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetFourteenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
                 case 14:
+                    try {
+                        title = (String) DetailCali.getDetailCali().getJSONObject("item14").get("title");
+                        description = (String) DetailCali.getDetailCali().getJSONObject("item14").get("description");
+                        phone = (String) DetailCali.getDetailCali().getJSONObject("item14").get("phone");
+                        email = (String) DetailCali.getDetailCali().getJSONObject("item14").get("email");
+                        coords = (String) DetailCali.getDetailCali().getJSONObject("item14").get("coords");
+
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
                     //Toast.makeText(v.getContext(), "CLIKC Alianza items", Toast.LENGTH_SHORT).show();
                     intent = new Intent(context, CaliDetFifteenthActivity.class);
+                    intent.putExtra("title", title);
+                    intent.putExtra("description", description);
+                    intent.putExtra("phone", phone);
+                    intent.putExtra("email", email);
+                    intent.putExtra("coords", coords);
                     context.startActivity(intent);
                     break;
 

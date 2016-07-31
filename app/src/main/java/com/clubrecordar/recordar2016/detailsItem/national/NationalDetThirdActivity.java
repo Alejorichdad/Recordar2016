@@ -12,15 +12,31 @@ import com.clubrecordar.recordar2016.R;
 
 public class NationalDetThirdActivity extends AppCompatActivity {
     TextView description;
-    String phoneNumber = "12345678";
-    Uri gmmIntentUri = Uri.parse("geo:37.7749,-122.4194?q=37.7749,-122.4194");
+    TextView title;
+    String phoneNumber;
+    String email;
+    Uri gmmIntentUri;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_national_det_third);
 
-
+        title = (TextView)findViewById(R.id.title);
         description = (TextView)findViewById(R.id.beneficio);
+
+        Bundle extras = getIntent().getExtras();
+
+        if(extras != null){
+            title.setText(extras.getString("title"));
+            description.setText(extras.getString("description"));
+
+            phoneNumber = extras.getString("phone");
+
+            email = extras.getString("email");
+
+            gmmIntentUri = Uri.parse("geo:"+extras.getString("coords")+"?q="+extras.getString("coords")+"");
+        }
 
         description.setMovementMethod(new ScrollingMovementMethod());
     }
@@ -44,7 +60,7 @@ public class NationalDetThirdActivity extends AppCompatActivity {
 
     public void sendEmail(View v){
         Intent emailIntent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto","abc@gmail.com", null));
+                "mailto",email, null));
         emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subject");
         emailIntent.putExtra(Intent.EXTRA_TEXT, "Body");
         startActivity(Intent.createChooser(emailIntent, "Send email..."));
