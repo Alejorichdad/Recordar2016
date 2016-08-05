@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.clubrecordar.recordar2016.R;
@@ -16,6 +17,7 @@ public class BoyacaDetFifteenthActivity extends AppCompatActivity {
     TextView title;
     String phoneNumber;
     String email;
+    ImageView contentImage;
     Uri gmmIntentUri;
 
     @Override
@@ -25,12 +27,14 @@ public class BoyacaDetFifteenthActivity extends AppCompatActivity {
 
         title = (TextView)findViewById(R.id.title);
         description = (TextView)findViewById(R.id.beneficio);
+        contentImage = (ImageView)findViewById(R.id.idImagen);
 
         Bundle extras = getIntent().getExtras();
 
         if(extras != null){
             title.setText(extras.getString("title"));
             description.setText(extras.getString("description"));
+            contentImage.setImageResource(extras.getInt("image"));
 
             phoneNumber = extras.getString("phone");
 

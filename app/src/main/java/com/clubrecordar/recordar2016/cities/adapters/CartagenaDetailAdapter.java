@@ -46,6 +46,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
     public String phone;
     public String email;
     public String coords;
+    public int image;
 
 
     public class CartagenaDetailViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
@@ -77,6 +78,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item1").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item1").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item1").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item1").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -88,6 +90,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -98,6 +101,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item2").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item2").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item2").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item2").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -109,6 +113,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -119,6 +124,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item3").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item3").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item3").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item3").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -130,6 +136,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -140,6 +147,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item4").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item4").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item4").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item3").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -151,6 +159,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -161,6 +170,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item5").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item5").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item5").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item5").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -172,6 +182,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -182,6 +193,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item6").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item6").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item6").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item6").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -193,6 +205,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -203,6 +216,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item7").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item7").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item7").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item7").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -214,6 +228,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -224,6 +239,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item8").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item8").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item8").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item8").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -235,6 +251,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -245,6 +262,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item9").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item9").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item9").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item9").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -256,6 +274,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -266,6 +285,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item10").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item10").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item10").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item10").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -277,6 +297,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -287,6 +308,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item11").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item11").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item11").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item11").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -298,6 +320,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 
@@ -308,6 +331,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item12").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item12").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item12").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item12").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -319,6 +343,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
                 case 12:
@@ -328,6 +353,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item13").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item13").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item13").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item13").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -339,6 +365,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
                 case 13:
@@ -348,6 +375,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                         phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("phone");
                         email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("email");
                         coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -359,15 +387,17 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
                 case 14:
                     try {
-                        title = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("title");
-                        description = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("description");
-                        phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("phone");
-                        email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("email");
-                        coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item14").get("coords");
+                        title = (String) DetailCartagena.getDetailCartagena().getJSONObject("item15").get("title");
+                        description = (String) DetailCartagena.getDetailCartagena().getJSONObject("item15").get("description");
+                        phone = (String) DetailCartagena.getDetailCartagena().getJSONObject("item15").get("phone");
+                        email = (String) DetailCartagena.getDetailCartagena().getJSONObject("item15").get("email");
+                        coords = (String) DetailCartagena.getDetailCartagena().getJSONObject("item15").get("coords");
+                        image = (int) DetailCartagena.getDetailCartagena().getJSONObject("item15").get("image");
 
                     } catch (JSONException e) {
                         e.printStackTrace();
@@ -379,6 +409,7 @@ public class CartagenaDetailAdapter extends RecyclerView.Adapter<CartagenaDetail
                     intent.putExtra("phone", phone);
                     intent.putExtra("email", email);
                     intent.putExtra("coords", coords);
+                    intent.putExtra("image", image);
                     context.startActivity(intent);
                     break;
 

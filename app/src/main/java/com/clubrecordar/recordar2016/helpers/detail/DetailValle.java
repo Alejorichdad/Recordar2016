@@ -1,5 +1,7 @@
 package com.clubrecordar.recordar2016.helpers.detail;
 
+import com.clubrecordar.recordar2016.R;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -30,90 +32,105 @@ public class DetailValle {
     public static String description1 = "description1";
     public static String phone1 = "12344567";
     public static String email1 = "some@gmail.com";
+    public static int imageFile1 = R.drawable.tienda;
     public static String coords1 = "37.7749,-122.4194";
 
     public static String title2 = "titulo2";
     public static String description2 = "description2";
     public static String phone2 = "22344567";
     public static String email2 = "some@gmail.com";
+    public static int imageFile2 = R.drawable.tienda;
     public static String coords2 = "37.7749,-122.4194";
 
     public static String title3 = "titulo3";
     public static String description3 = "description3";
     public static String phone3 = "3344567";
     public static String email3 = "some@gmail.com";
+    public static int imageFile3 = R.drawable.tienda;
     public static String coords3 = "37.7749,-122.4194";
 
     public static String title4 = "titulo4";
     public static String description4 = "description4";
     public static String phone4 = "444567";
     public static String email4 = "some@gmail.com";
+    public static int imageFile4 = R.drawable.tienda;
     public static String coords4 = "37.7749,-122.4194";
 
     public static String title5 = "titulo5";
     public static String description5 = "description5";
     public static String phone5 = "544567";
     public static String email5 = "some@gmail.com";
+    public static int imageFile5 = R.drawable.tienda;
     public static String coords5 = "37.7749,-122.4194";
 
     public static String title6 = "titulo6";
     public static String description6 = "description6";
     public static String phone6 = "644567";
     public static String email6 = "some@gmail.com";
+    public static int imageFile6 = R.drawable.tienda;
     public static String coords6 = "37.7749,-122.4194";
 
     public static String title7 = "titulo7";
     public static String description7 = "description7";
     public static String phone7 = "744567";
     public static String email7 = "some@gmail.com";
+    public static int imageFile7 = R.drawable.tienda;
     public static String coords7 = "37.7749,-122.4194";
 
     public static String title8 = "titulo8";
     public static String description8 = "description8";
     public static String phone8 = "844567";
     public static String email8 = "some@gmail.com";
+    public static int imageFile8 = R.drawable.tienda;
     public static String coords8 = "37.7749,-122.4194";
 
     public static String title9 = "titulo9";
     public static String description9 = "description9";
     public static String phone9 = "944567";
     public static String email9 = "some@gmail.com";
+    public static int imageFile9 = R.drawable.tienda;
     public static String coords9 = "37.7749,-122.4194";
 
     public static String title10 = "titulo10";
     public static String description10 = "description10";
     public static String phone10 = "1044567";
     public static String email10 = "some@gmail.com";
+    public static int imageFile10 = R.drawable.tienda;
     public static String coords10 = "37.7749,-122.4194";
 
     public static String title11 = "titulo11";
     public static String description11 = "description11";
     public static String phone11 = "1144567";
     public static String email11 = "some@gmail.com";
+    public static int imageFile11 = R.drawable.tienda;
     public static String coords11 = "37.7749,-122.4194";
 
     public static String title12 = "titulo12";
     public static String description12 = "description12";
     public static String phone12 = "1244567";
     public static String email12 = "some@gmail.com";
+    public static int imageFile12 = R.drawable.tienda;
     public static String coords12 = "37.7749,-122.4194";
 
     public static String title13 = "titulo13";
     public static String description13 = "description13";
     public static String phone13 = "1344567";
     public static String email13 = "some@gmail.com";
+    public static int imageFile13 = R.drawable.tienda;
     public static String coords13 = "37.7749,-122.4194";
 
     public static String title14 = "titulo14";
     public static String description14 = "description14";
     public static String phone14 = "1444567";
     public static String email14 = "some@gmail.com";
+    public static int imageFile14 = R.drawable.tienda;
     public static String coords14 = "37.7749,-122.4194";
 
     public static String title15 = "titulo15";
     public static String description15 = "description15";
     public static String phone15 = "1544567";
     public static String email15 = "some@gmail.com";
+    public static int imageFile15 = R.drawable.tienda;
     public static String coords15 = "37.7749,-122.4194";
 
 
@@ -151,6 +168,7 @@ public class DetailValle {
         contentValle1.put("description", description1);
         contentValle1.put("phone", phone1);
         contentValle1.put("email", email1);
+        contentValle1.put("image", imageFile1);
         contentValle1.put("coords", coords1);
 
         return contentValle1;
@@ -162,6 +180,7 @@ public class DetailValle {
         contentValle2.put("description", description2);
         contentValle2.put("phone", phone2);
         contentValle2.put("email", email2);
+        contentValle2.put("image", imageFile2);
         contentValle2.put("coords", coords2);
 
         return contentValle2;
@@ -173,6 +192,7 @@ public class DetailValle {
         contentValle3.put("description", description3);
         contentValle3.put("phone", phone3);
         contentValle3.put("email", email3);
+        contentValle3.put("image", imageFile3);
         contentValle3.put("coords", coords3);
 
         return contentValle3;
@@ -184,6 +204,7 @@ public class DetailValle {
         contentValle4.put("description", description4);
         contentValle4.put("phone", phone4);
         contentValle4.put("email", email4);
+        contentValle4.put("image", imageFile4);
         contentValle4.put("coords", coords4);
 
         return contentValle4;
@@ -195,6 +216,7 @@ public class DetailValle {
         contentValle5.put("description", description5);
         contentValle5.put("phone", phone5);
         contentValle5.put("email", email5);
+        contentValle5.put("image", imageFile5);
         contentValle5.put("coords", coords5);
 
         return contentValle5;
@@ -206,6 +228,7 @@ public class DetailValle {
         contentValle6.put("description", description6);
         contentValle6.put("phone", phone6);
         contentValle6.put("email", email6);
+        contentValle6.put("image", imageFile6);
         contentValle6.put("coords", coords6);
 
         return contentValle6;
@@ -217,6 +240,7 @@ public class DetailValle {
         contentValle7.put("description", description7);
         contentValle7.put("phone", phone7);
         contentValle7.put("email", email7);
+        contentValle7.put("image", imageFile7);
         contentValle7.put("coords", coords7);
 
         return contentValle7;
@@ -228,6 +252,7 @@ public class DetailValle {
         contentValle8.put("description", description8);
         contentValle8.put("phone", phone8);
         contentValle8.put("email", email8);
+        contentValle8.put("image", imageFile8);
         contentValle8.put("coords", coords8);
 
         return contentValle8;
@@ -239,6 +264,7 @@ public class DetailValle {
         contentValle9.put("description", description9);
         contentValle9.put("phone", phone9);
         contentValle9.put("email", email9);
+        contentValle9.put("image", imageFile9);
         contentValle9.put("coords", coords9);
 
         return contentValle9;
@@ -250,6 +276,7 @@ public class DetailValle {
         contentValle10.put("description", description10);
         contentValle10.put("phone", phone10);
         contentValle10.put("email", email10);
+        contentValle10.put("image", imageFile10);
         contentValle10.put("coords", coords10);
 
         return contentValle10;
@@ -261,6 +288,7 @@ public class DetailValle {
         contentValle11.put("description", description11);
         contentValle11.put("phone", phone11);
         contentValle11.put("email", email11);
+        contentValle11.put("image", imageFile11);
         contentValle11.put("coords", coords11);
 
         return contentValle11;
@@ -272,6 +300,7 @@ public class DetailValle {
         contentValle12.put("description", description12);
         contentValle12.put("phone", phone12);
         contentValle12.put("email", email12);
+        contentValle12.put("image", imageFile12);
         contentValle12.put("coords", coords12);
 
         return contentValle12;
@@ -283,6 +312,7 @@ public class DetailValle {
         contentValle13.put("description", description13);
         contentValle13.put("phone", phone13);
         contentValle13.put("email", email13);
+        contentValle13.put("image", imageFile13);
         contentValle13.put("coords", coords13);
 
         return contentValle13;
@@ -294,6 +324,7 @@ public class DetailValle {
         contentValle14.put("description", description14);
         contentValle14.put("phone", phone14);
         contentValle14.put("email", email14);
+        contentValle14.put("image", imageFile14);
         contentValle14.put("coords", coords14);
 
         return contentValle14;
@@ -305,6 +336,7 @@ public class DetailValle {
         contentValle15.put("description", description15);
         contentValle15.put("phone", phone15);
         contentValle15.put("email", email15);
+        contentValle15.put("image", imageFile15);
         contentValle15.put("coords", coords15);
 
         return contentValle15;

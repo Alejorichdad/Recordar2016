@@ -1,5 +1,7 @@
 package com.clubrecordar.recordar2016.helpers.detail;
 
+import com.clubrecordar.recordar2016.R;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -31,90 +33,105 @@ public class DetailBarranquilla {
     public static String description1 = "description1";
     public static String phone1 = "12344567";
     public static String email1 = "some@gmail.com";
+    public static int imageFile1 = R.drawable.tienda;
     public static String coords1 = "37.7749,-122.4194";
 
     public static String title2 = "titulo2";
     public static String description2 = "description2";
     public static String phone2 = "22344567";
     public static String email2 = "some@gmail.com";
+    public static int imageFile2 = R.drawable.tienda;
     public static String coords2 = "37.7749,-122.4194";
 
     public static String title3 = "titulo3";
     public static String description3 = "description3";
     public static String phone3 = "3344567";
     public static String email3 = "some@gmail.com";
+    public static int imageFile3 = R.drawable.barranquilla;
     public static String coords3 = "37.7749,-122.4194";
 
     public static String title4 = "titulo4";
     public static String description4 = "description4";
     public static String phone4 = "444567";
     public static String email4 = "some@gmail.com";
+    public static int imageFile4 = R.drawable.barranquilla;
     public static String coords4 = "37.7749,-122.4194";
 
     public static String title5 = "titulo5";
     public static String description5 = "description5";
     public static String phone5 = "544567";
     public static String email5 = "some@gmail.com";
+    public static int imageFile5 = R.drawable.barranquilla;
     public static String coords5 = "37.7749,-122.4194";
 
     public static String title6 = "titulo6";
     public static String description6 = "description6";
     public static String phone6 = "644567";
     public static String email6 = "some@gmail.com";
+    public static int imageFile6 = R.drawable.barranquilla;
     public static String coords6 = "37.7749,-122.4194";
 
     public static String title7 = "titulo7";
     public static String description7 = "description7";
     public static String phone7 = "744567";
     public static String email7 = "some@gmail.com";
+    public static int imageFile7 = R.drawable.barranquilla;
     public static String coords7 = "37.7749,-122.4194";
 
     public static String title8 = "titulo8";
     public static String description8 = "description8";
     public static String phone8 = "844567";
     public static String email8 = "some@gmail.com";
+    public static int imageFile8 = R.drawable.barranquilla;
     public static String coords8 = "37.7749,-122.4194";
 
     public static String title9 = "titulo9";
     public static String description9 = "description9";
     public static String phone9 = "944567";
     public static String email9 = "some@gmail.com";
+    public static int imageFile9 = R.drawable.barranquilla;
     public static String coords9 = "37.7749,-122.4194";
 
     public static String title10 = "titulo10";
     public static String description10 = "description10";
     public static String phone10 = "1044567";
     public static String email10 = "some@gmail.com";
+    public static int imageFile10 = R.drawable.barranquilla;
     public static String coords10 = "37.7749,-122.4194";
 
     public static String title11 = "titulo11";
     public static String description11 = "description11";
     public static String phone11 = "1144567";
     public static String email11 = "some@gmail.com";
+    public static int imageFile11 = R.drawable.barranquilla;
     public static String coords11 = "37.7749,-122.4194";
 
     public static String title12 = "titulo12";
     public static String description12 = "description12";
     public static String phone12 = "1244567";
     public static String email12 = "some@gmail.com";
+    public static int imageFile12 = R.drawable.barranquilla;
     public static String coords12 = "37.7749,-122.4194";
 
     public static String title13 = "titulo13";
     public static String description13 = "description13";
     public static String phone13 = "1344567";
     public static String email13 = "some@gmail.com";
+    public static int imageFile13 = R.drawable.barranquilla;
     public static String coords13 = "37.7749,-122.4194";
 
     public static String title14 = "titulo14";
     public static String description14 = "description14";
     public static String phone14 = "1444567";
     public static String email14 = "some@gmail.com";
+    public static int imageFile14 = R.drawable.barranquilla;
     public static String coords14 = "37.7749,-122.4194";
 
     public static String title15 = "titulo15";
     public static String description15 = "description15";
     public static String phone15 = "1544567";
     public static String email15 = "some@gmail.com";
+    public static int imageFile15 = R.drawable.alianzas;
     public static String coords15 = "37.7749,-122.4194";
 
 
@@ -151,6 +168,7 @@ public class DetailBarranquilla {
         contentBarranquilla1.put("title", title1);
         contentBarranquilla1.put("description", description1);
         contentBarranquilla1.put("phone", phone1);
+        contentBarranquilla1.put("image", imageFile1);
         contentBarranquilla1.put("email", email1);
         contentBarranquilla1.put("coords", coords1);
 
@@ -162,6 +180,7 @@ public class DetailBarranquilla {
         contentBarranquilla2.put("title", title2);
         contentBarranquilla2.put("description", description2);
         contentBarranquilla2.put("phone", phone2);
+        contentBarranquilla2.put("image", imageFile2);
         contentBarranquilla2.put("email", email2);
         contentBarranquilla2.put("coords", coords2);
 
@@ -173,6 +192,7 @@ public class DetailBarranquilla {
         contentBarranquilla3.put("title", title3);
         contentBarranquilla3.put("description", description3);
         contentBarranquilla3.put("phone", phone3);
+        contentBarranquilla3.put("image", imageFile3);
         contentBarranquilla3.put("email", email3);
         contentBarranquilla3.put("coords", coords3);
 
@@ -184,6 +204,7 @@ public class DetailBarranquilla {
         contentBarranquilla4.put("title", title4);
         contentBarranquilla4.put("description", description4);
         contentBarranquilla4.put("phone", phone4);
+        contentBarranquilla4.put("image", imageFile4);
         contentBarranquilla4.put("email", email4);
         contentBarranquilla4.put("coords", coords4);
 
@@ -195,6 +216,7 @@ public class DetailBarranquilla {
         contentBarranquilla5.put("title", title5);
         contentBarranquilla5.put("description", description5);
         contentBarranquilla5.put("phone", phone5);
+        contentBarranquilla5.put("image", imageFile5);
         contentBarranquilla5.put("email", email5);
         contentBarranquilla5.put("coords", coords5);
 
@@ -206,6 +228,7 @@ public class DetailBarranquilla {
         contentBarranquilla6.put("title", title6);
         contentBarranquilla6.put("description", description6);
         contentBarranquilla6.put("phone", phone6);
+        contentBarranquilla6.put("image", imageFile6);
         contentBarranquilla6.put("email", email6);
         contentBarranquilla6.put("coords", coords6);
 
@@ -217,6 +240,7 @@ public class DetailBarranquilla {
         contentBarranquilla7.put("title", title7);
         contentBarranquilla7.put("description", description7);
         contentBarranquilla7.put("phone", phone7);
+        contentBarranquilla7.put("image", imageFile7);
         contentBarranquilla7.put("email", email7);
         contentBarranquilla7.put("coords", coords7);
 
@@ -228,6 +252,7 @@ public class DetailBarranquilla {
         contentBarranquilla8.put("title", title8);
         contentBarranquilla8.put("description", description8);
         contentBarranquilla8.put("phone", phone8);
+        contentBarranquilla8.put("image", imageFile8);
         contentBarranquilla8.put("email", email8);
         contentBarranquilla8.put("coords", coords8);
 
@@ -239,6 +264,7 @@ public class DetailBarranquilla {
         contentBarranquilla9.put("title", title9);
         contentBarranquilla9.put("description", description9);
         contentBarranquilla9.put("phone", phone9);
+        contentBarranquilla9.put("image", imageFile9);
         contentBarranquilla9.put("email", email9);
         contentBarranquilla9.put("coords", coords9);
 
@@ -250,6 +276,7 @@ public class DetailBarranquilla {
         contentBarranquilla10.put("title", title10);
         contentBarranquilla10.put("description", description10);
         contentBarranquilla10.put("phone", phone10);
+        contentBarranquilla10.put("image", imageFile10);
         contentBarranquilla10.put("email", email10);
         contentBarranquilla10.put("coords", coords10);
 
@@ -262,6 +289,7 @@ public class DetailBarranquilla {
         contentBarranquilla11.put("description", description11);
         contentBarranquilla11.put("phone", phone11);
         contentBarranquilla11.put("email", email11);
+        contentBarranquilla11.put("image", imageFile11);
         contentBarranquilla11.put("coords", coords11);
 
         return contentBarranquilla11;
@@ -273,6 +301,7 @@ public class DetailBarranquilla {
         contentBarranquilla12.put("description", description12);
         contentBarranquilla12.put("phone", phone12);
         contentBarranquilla12.put("email", email12);
+        contentBarranquilla12.put("image", imageFile12);
         contentBarranquilla12.put("coords", coords12);
 
         return contentBarranquilla12;
@@ -284,6 +313,7 @@ public class DetailBarranquilla {
         contentBarranquilla13.put("description", description13);
         contentBarranquilla13.put("phone", phone13);
         contentBarranquilla13.put("email", email13);
+        contentBarranquilla13.put("image", imageFile13);
         contentBarranquilla13.put("coords", coords13);
 
         return contentBarranquilla13;
@@ -295,6 +325,7 @@ public class DetailBarranquilla {
         contentBarranquilla14.put("description", description14);
         contentBarranquilla14.put("phone", phone14);
         contentBarranquilla14.put("email", email14);
+        contentBarranquilla14.put("image", imageFile14);
         contentBarranquilla14.put("coords", coords14);
 
         return contentBarranquilla14;
@@ -306,6 +337,7 @@ public class DetailBarranquilla {
         contentBarranquilla15.put("description", description15);
         contentBarranquilla15.put("phone", phone15);
         contentBarranquilla15.put("email", email15);
+        contentBarranquilla15.put("image", imageFile15);
         contentBarranquilla15.put("coords", coords15);
 
         return contentBarranquilla15;
